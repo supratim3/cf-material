@@ -1,0 +1,95 @@
+.module-container {
+	margin-bottom: 20px;
+}
+.page-header > h2 {
+	text-align:left;
+}
+#multiple-datasets {
+	float: left;
+    width: 45%;
+    margin-left: 50px;
+}
+.typeaheadContainer {
+	position: relative;
+	width: 100%;
+}
+input.typeahead{
+    width: 100%;
+    height: 35px;
+    padding: 8px 12px;
+    font-size: 19px;
+    line-height: 30px;
+}
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 15px;
+    cursor: pointer;
+    color: #ccc;
+}
+.noResultsText {
+	color: dimgray;
+	font-style: italic;
+	width: 100%;
+    display: block;
+    word-wrap: break-word;
+}
+input.typeahead + .dropdown-menu {
+	max-height: 400px;
+    overflow-y: scroll;
+	width: 100%;
+}
+.item_match{
+	border-bottom:1px solid #d4d4d4; 
+}
+.item_match > span:last-child{
+	font-size: 14px;
+    font-style: oblique;
+	white-space: pre-wrap;
+}
+[uib-typeahead-popup].dropdown-menu {
+    display: block;
+    width: 44%;
+	margin: 2px 0px;
+}
+#itemQuantity>input {
+	width: 75px;
+    height: 35px;
+    padding: 6px 12px;
+    font-size: 19px;
+    float: left;
+    margin-left: 10px;
+}
+.searchtype .btn {
+	padding: 8px 12px;
+	font-size: 15px;
+	height: 35px;
+    margin-bottom: 0px;
+}
+.searchtype {
+	float: left;
+}
+.cartaddbtn {
+    height: 35px;
+    font-size: 14px;
+}
+
+#item-table.table {
+	margin-bottom: 0;
+}
+.dataTables_filter {
+	margin-bottom: 20px;
+	width: 250px;
+}
+.tablehdrBtn {
+    float: right;
+    margin-right: 30px;
+}
+.input-group-btn {
+	vertical-align: top;
+}
+

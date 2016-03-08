@@ -1,0 +1,27 @@
+{
+  "name": "responsive-emitter",
+  "description": "Listens to window resize events and trigger proprietary jQuery events for Bootstrap responsive thresholds.",
+  "version": "0.8.1",
+  "main": [
+    "js/responsive-emitter.js"
+  ],
+  "ignore": [
+    "test",
+    ".*",
+    "Gruntfile"
+  ],
+  "dependencies": {
+    "ge-bootstrap": "git+https://devcloud.sw.ge.com/source/scm/dxc/ge-bootstrap#~1.1",
+    "requirejs": "~2.1.6",
+    "jquery": "~1.10.0",
+    "respond": "https://github.com/GeneralElectric/Respond.git#~1.2.1"
+  },
+  "gitHead": "8990d4beb19587550766e5674accb71182563846",
+  "readme": "# Responsive Event Emitter\n\nListens to window resize events and trigger proprietary jQuery\n events for Bootstrap responsive thresholds. That is, when the\n window size enters a new responsive zone, such as less than\n 768 or greater than 1200, trigger the appropriate event.\n\n Any custom scripts can attach to these events to trigger\n behavior at these various screen sizes. (e.g., collapse the nav).\n",
+  "readmeFilename": "README.md",
+  "_id": "responsive-emitter@0.8.1",
+  "repository": {
+    "type": "git",
+    "url": "git://devcloud.sw.ge.com/source/scm/dxc/responsive-emitter"
+  }
+}

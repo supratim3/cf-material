@@ -1,0 +1,37 @@
+{
+  "name": "cascading-list",
+  "version": "0.4.0",
+  "main": [
+    "js/cascading-list.js",
+    "less/cascading-list.less",
+    "less/cascading-list-responsive.less"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "package.json",
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    "js/require.config.js"
+  ],
+  "dependencies": {
+    "ge-bootstrap": "git+https://devcloud.sw.ge.com/source/scm/dxc/ge-bootstrap#~1.1",
+    "requirejs": "~2.1.6",
+    "jquery": "~1.10.0"
+  },
+  "devDependencies": {
+    "jasmine": "latest"
+  },
+  "gitHead": "221b97116681a5cf1aaa134e1c0216b353b37480",
+  "readme": " Cascading List\n===============\n\n\n",
+  "readmeFilename": "Readme.md",
+  "_id": "cascading-list@0.4.0",
+  "description": "Cascading List ===============",
+  "repository": {
+    "type": "git",
+    "url": "https://devcloud.sw.ge.com/source/scm/dxc/cascading-list"
+  }
+}

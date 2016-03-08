@@ -1,0 +1,26 @@
+{
+  "name": "col-reorder-amd",
+  "description": "ColReorder adds the ability for the end user to click and drag column headers to reorder a table as they see fit, to DataTables.",
+  "version": "1.1.0",
+  "main": [
+    "media/js/ColReorder.js",
+    "media/css/ColReorder.css"
+  ],
+  "ignore": [
+    "components",
+    "node_modules",
+    "test",
+    ".*",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "datatables": "~1.9.4"
+  },
+  "gitHead": "bc7ffd7b2475c5577f8e4af485a47a4454b48119",
+  "_id": "col-reorder-amd@1.1.0",
+  "readme": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://devcloud.sw.ge.com/source/scm/dxc/col-reorder-amd"
+  }
+}

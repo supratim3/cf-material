@@ -1,0 +1,10 @@
+---
+applications:
+- name: mm-webapp-material-supratim
+  memory: 512M
+  instances: 1
+  host: mm-webapp-material-supratim
+  buildpack: nodejs_buildpack
+  path: .
+  command: node server.js
+  

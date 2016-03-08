@@ -1,0 +1,30 @@
+{
+  "name": "message-list",
+  "description": "Custom Bootstrap list to display messages with labels and status.",
+  "version": "0.6.0",
+  "main": [
+    "less/message-list.less"
+  ],
+  "ignore": [
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    ".*",
+    "Gruntfile.js",
+    "js/require.config.js"
+  ],
+  "dependencies": {
+    "ge-bootstrap": "git://devcloud.sw.ge.com/source/scm/dxc/ge-bootstrap#~1.1.1",
+    "requirejs": "~2.1.6",
+    "jquery": "~1.10.0"
+  },
+  "gitHead": "5cc951b510b5d34eff22da04c77783b0734da6b3",
+  "readme": "ERROR: No README.md file found!",
+  "readmeFilename": "README.md",
+  "_id": "message-list@0.6.0",
+  "repository": {
+    "type": "git",
+    "url": "https://devcloud.sw.ge.com/source/scm/dxc/message-list"
+  }
+}

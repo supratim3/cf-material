@@ -1,0 +1,32 @@
+{
+  "name": "dashboard-widgets",
+  "description": "Collection of common dashboard modules for use on IIDS.",
+  "version": "0.7.0",
+  "main": [
+    "less/add-widget.less",
+    "less/snapshot.less",
+    "less/responsive.less"
+  ],
+  "ignore": [
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    ".*",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.6",
+    "jquery": "~1.10.0",
+    "ge-bootstrap": "git://devcloud.sw.ge.com/source/scm/dxc/ge-bootstrap#~1.1.1",
+    "modules": "git://devcloud.sw.ge.com/source/scm/dxc/modules#~0.7.0"
+  },
+  "gitHead": "ba986da49aeee45d6b43cb24a5e316bfbcae9ef4",
+  "readme": "# Dashboard Widgets",
+  "readmeFilename": "README.md",
+  "_id": "dashboard-widgets@0.7.0",
+  "repository": {
+    "type": "git",
+    "url": "https://devcloud.sw.ge.com/source/scm/dxc/dashboard-widgets"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "charts",
+  "version": "0.6.0",
+  "main": [
+    "js/charts.js",
+    "less/charts.less"
+  ],
+  "ignore": [
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    ".*",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "brandkit": "git://devcloud.sw.ge.com/source/scm/dxc/brandkit#~1.1.0",
+    "highcharts-amd": "git://devcloud.sw.ge.com/source/scm/dxc/highcharts-amd#~3.1.0",
+    "requirejs": "~2.1.6",
+    "jquery": "~1.10.0"
+  },
+  "gitHead": "3c23f472afe0347cf734c4ece051b8502735efcd",
+  "readme": "# Charts\n\n# Using Themes\n\nTwo options are available when setting a theme within the DS\n\n* theme.js - \"Light\" Theme (default)\n* theme-dark.js - \"Dark\" Theme\n\nTo switch themes include the appropriate theme in your require block and activate it.\n\n        define([\n          'charts/theme-dark',\n          'highstock'\n        ], function (theme) {\n            Highcharts.setOptions(theme);\n        });\n\n# Caveats\n\nNote that due to the nature of the highcharts library only one theme can be applied on a page at a time. If you try to set multiple themes the LAST theme set will apply to all chart objects on the page.        ",
+  "readmeFilename": "README.md",
+  "_id": "charts@0.6.0",
+  "description": "# Using Themes",
+  "repository": {
+    "type": "git",
+    "url": "https://devcloud.sw.ge.com/source/scm/dxc/charts"
+  }
+}

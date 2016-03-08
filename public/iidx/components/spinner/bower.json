@@ -1,0 +1,31 @@
+{
+  "name": "spinner",
+  "version": "0.5.1",
+  "main": [
+    "js/spinner.js"
+  ],
+  "ignore": [
+    "components",
+    "css",
+    "node_modules",
+    "test",
+    ".*",
+    "Gruntfile.js",
+    "js/require.config.js"
+  ],
+  "dependencies": {
+    "brandkit": "git+https://devcloud.sw.ge.com/source/scm/dxc/brandkit#~1.1.0",
+    "spin.js": "~1.3",
+    "requirejs": "~2.1.6",
+    "jquery": "~1.10.0"
+  },
+  "gitHead": "295dcd83e2fec29759cc8575e369934fb637ee6b",
+  "readme": "# Spinner\n",
+  "readmeFilename": "README.md",
+  "_id": "spinner@0.5.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://devcloud.sw.ge.com/source/scm/dxc/spinner"
+  }
+}

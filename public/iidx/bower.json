@@ -1,0 +1,30 @@
+{
+  "name": "iids",
+  "version": "1.1.2",
+  "dependencies": {
+    "cascading-list": "git+https://devcloud.sw.ge.com/source/scm/dxc/cascading-list#~0.4.0",
+    "charts": "git+https://devcloud.sw.ge.com/source/scm/dxc/charts#~0.6.0",
+    "collapsible-list": "git+https://devcloud.sw.ge.com/source/scm/dxc/collapsible-list#~0.4.0",
+    "contextmenu": "git+https://devcloud.sw.ge.com/source/scm/dxc/contextmenu#~0.4.0",
+    "dashboard-widgets": "git+https://devcloud.sw.ge.com/source/scm/dxc/dashboard-widgets#~0.7.0",
+    "datagrids": "git+https://devcloud.sw.ge.com/source/scm/dxc/datagrids#~0.8.0",
+    "datepicker": "git+https://devcloud.sw.ge.com/source/scm/dxc/datepicker#~0.5.0",
+    "declarative-visualizations": "git+https://devcloud.sw.ge.com/source/scm/dxc/declarative-visualizations#~0.6.0",
+    "ge-bootstrap": "git+https://devcloud.sw.ge.com/source/scm/dxc/ge-bootstrap#~1.1.1",
+    "iids-navbar": "git+https://devcloud.sw.ge.com/source/scm/dxc/iids-navbar#~0.11.0",
+    "multi-step-navigation": "git+https://devcloud.sw.ge.com/source/scm/dxc/multi-step-navigation#~0.3",
+    "modernizr": "~2.6.2",
+    "modules": "git+https://devcloud.sw.ge.com/source/scm/dxc/modules#~0.7.1",
+    "prettify": "git+https://devcloud.sw.ge.com/source/scm/dxc/prettify#~0.2.1",
+    "jquery": "~1.10.0",
+    "responsive-tables": "git+https://devcloud.sw.ge.com/source/scm/dxc/responsive-tables#~0.4.0",
+    "respond": "https://github.com/GeneralElectric/Respond.git#~1.2.1",
+    "spinner": "git+https://devcloud.sw.ge.com/source/scm/dxc/spinner#~0.5.1",
+    "trays": "git+https://devcloud.sw.ge.com/source/scm/dxc/trays#~0.5.3",
+    "font-awesome": "~3.1.1",
+    "requirejs": "~2.1.6"
+  },
+  "resolutions": {
+    "jquery": "~1.10.0"
+  }
+}

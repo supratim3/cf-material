@@ -29,5 +29,37 @@ node_modules
 # Optional npm cache directory
 .npm
 
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+logs
+project/project
+project/target
+target
+tmp
+.history
+dist
+/.idea
+/*.iml
+/out
+/.idea_modules
+/.classpath
+/.project
+/RUNNING_PID
+/.settings
+
+node_modules
+dist
+.tmp
+bower_components
+
+.*/*.log
+
 # Optional REPL history
 .node_repl_history

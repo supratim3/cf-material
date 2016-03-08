@@ -1,0 +1,86 @@
+<div translate-cloak class="container td-container" id="td-container">
+	<!--Header-->
+    <div class="page-header" style="margin-top: 20px;">
+      <h2 class="voice voice-brand">
+		Shopping Cart Summary
+	  </h2>
+    </div>
+    <div class="row">
+		<div  id="material_search_anchor"></div>
+	    <div class="span12 module-container" id="material_search">
+		    <section class="module">
+				<div class="btn-group searchtype">
+					<label class="btn" id="manual" ng-model="radioModel" uib-btn-radio="'Manual'">Manual</label>
+					<label class="btn" id="repairkit" ng-model="radioModel" uib-btn-radio="'RepairKit'" ng-disabled="true">Repair Kit</label>
+					<label class="btn" id="catalog" ng-model="radioModel" uib-btn-radio="'catalog'" ng-disabled="true">Catalog</label>
+				</div>
+				<div id="multiple-datasets">
+					<div class="typeaheadContainer">
+						<input type="search" id="itemSearchInput" ng-model="itemSearched" uib-typeahead="item as item.itemNumber for item in searchItems($viewValue)" typeahead-no-results="noResults" typeahead-template-url="customTemplate.html" typeahead-wait-ms="200" typeahead-on-select="addItemQuantity($item, $model, $label)"  typeahead-is-open="typeaheadIsOpen" typeahead-focus-first=true class="typeahead pull-left" placeholder="search items ..." typeahead-input-formatter="formatInputLabel($model)" typeahead-select-on-exact=true>
+						<span id="searchclear" ng-if="itemSearched" ng-click="clearSearch()"><i class="icon-remove-circle"></i></span>
+					</div>
+					<div ng-if="noResults && itemSearched">
+						<span class="noResultsText"> Your search <strong>"{{itemSearched}}"</strong> did not match any items.</span>
+					</div>
+				</div>
+				<div id="itemQuantity" >
+					<input type="number" placeholder="QTY" class="input-small" ng-model="itemQuantity" ng-show="itemSearched.itemNumber.length > 0"  min="0" focus-on-show/>
+				</div>
+				<button  class="btn pull-right btn-primary cartaddbtn" ng-click="addItemToCart()">Add to cart</button>
+			</section>
+		</div>
+		<div class="span12 module-container" >
+			<section class="module">
+				<div id="scroll-table-container" class="dataTables_wrapper no-footer">
+					<div>
+						<span class="dataTables_info itemCount">
+							Showing {{filteredItems.length}} of {{items.length}}
+						</span>
+						<div class="dataTables_filter input-group">
+							<input type="search" class="form-control" placeholder="" ng-model="searchText">
+							<span class="input-group-btn">
+							  <button type="submit" class="btn btn-icon"><i class="icon-search"></i></button>
+							</span>
+						</div>
+						<span class="input-group-btn tablehdrBtn">
+							<button class="btn" ng-click="deleteItems()" ng-disabled="noSelectedItems"><i class="icon-trash"></i></button>
+						</span>
+					</div>
+					<table id="item-table"  my-table="overrideOptions" aa-data="items" ao-column-defs="columnDefs" class="table table-bordered no-footer">
+					</table>
+				</div>
+			</section>
+		</div>
+    </div>
+
+	<script type="text/ng-template" id="deleteItemModal.html">
+        <div class="modal-body">
+            <h3 class="modal-title">DO you want to delete item from cart?</h3>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">Yes</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">No</button>
+        </div>
+    </script>
+	<script type="text/ng-template" id="showItemInfo.html">
+		<div class="modal-header">
+            <h2 class="modal-title">On Hand Quantity</h2>
+        </div>
+        <div class="modal-body">
+			<div>
+				<label style="width:100%"><span>Item#: </span><span style="font-weight:600">114X1208</span></label>
+				<label style="width:100%"><span>Bearing, cap, No Fwd</span></label>
+			</div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="close()">close</button>
+        </div>
+    </script>
+
+	<script type="text/ng-template" id="customTemplate.html">
+		<a class="item_match">
+			<span ng-bind-html="match.model.itemNumber | uibTypeaheadHighlight:query"></span><br/>
+			<span ng-bind-html="match.model.description | uibTypeaheadHighlight:query"></span>
+		</a>
+	</script>
+  </div>
